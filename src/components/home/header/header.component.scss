@@ -1,0 +1,23 @@
+.header{
+ background: rgba(255, 255, 255, 0.781);
+ padding: 10px;
+
+ &-nav{
+   display: flex;
+   justify-content: space-between;
+
+   &_link{
+     color: black;
+     text-transform: uppercase;
+     text-decoration: none;
+
+     &:hover{
+      text-decoration: underline;
+     }
+
+     &:visited{
+       color: black;
+     }
+   }
+ }
+}

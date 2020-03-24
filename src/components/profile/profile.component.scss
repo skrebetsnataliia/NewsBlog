@@ -1,0 +1,12 @@
+.profile{
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px;
+
+  &-information{
+    align-self: start;
+  }
+}

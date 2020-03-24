@@ -1,0 +1,28 @@
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.news-img {
+  width: 200px;
+  padding: 15px;
+}
+
+.news-information_title {
+  text-transform: uppercase;
+}
+
+.news-information_author {
+  color: gray;
+}
+/*# sourceMappingURL=news-item.component.css.map */

@@ -1,0 +1,20 @@
+<form [formGroup]="myGroup" (ngSubmit)="onSubmit()" class="form">
+    <input class="form-input" formControlName='username' type="text" placeholder="Username">
+        <ng-container *ngIf="myGroup.controls.username.touched">
+          <div
+          *ngIf="myGroup.controls.username.errors?.required">
+            Please enter username:)
+          </div>
+        </ng-container>
+        <input class="form-input" formControlName='password' type= "{{showPassword ? 'text' : 'password'}}"  placeholder="password">
+        <ng-container *ngIf="myGroup.controls.password.touched">
+          <div
+          *ngIf="myGroup.controls.password.errors?.required">
+          Please enter password:)
+          </div>
+        </ng-container>
+        <div *ngIf="incorrectData" class="red-text">The username or password is incorrect</div>
+        <i (click)='showHiddenPassword()' class="show-pass">show/hidden password</i>
+        <button class="form-btn" [disabled]="myGroup.invalid">Login</button>
+  </form>
+

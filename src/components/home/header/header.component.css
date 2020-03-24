@@ -1,0 +1,28 @@
+.header {
+  background: rgba(255, 255, 255, 0.781);
+  padding: 10px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav_link {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-nav_link:hover {
+  text-decoration: underline;
+}
+
+.header-nav_link:visited {
+  color: black;
+}
+/*# sourceMappingURL=header.component.css.map */

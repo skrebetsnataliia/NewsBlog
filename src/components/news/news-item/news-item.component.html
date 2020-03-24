@@ -1,0 +1,10 @@
+<div class="news">
+  <img class="news-img " [src]="news.urlToImage" alt=""/>
+  <div class="news-information">
+    <h3 class="news-information_title">{{news.title}} </h3>
+    <p class="news-information_data">{{news.publishedAt}}</p>
+    <p class="news-information_data">{{news.author}}</p>
+    <p class="news-information_content">{{news.content}}</p>
+    <a class="news-information_link" [href]="news.url" target="_blank">Read more...</a>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+.news{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background: white;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+
+  &-img{
+    width: 200px;
+    padding: 15px;
+  }
+
+  &-information{
+
+    &_title{
+      text-transform: uppercase;
+    }
+
+    &_author{
+      color: gray;
+    }
+  }
+}
+
+
