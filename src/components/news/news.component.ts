@@ -13,6 +13,7 @@ export class NewsComponent implements OnInit {
 
   allNews: INews[] = [];
   indexCurrentsArticle: number;
+  error: any;
 
   ngOnInit(): void {
     this.newsService.getNews().subscribe(
@@ -21,6 +22,10 @@ export class NewsComponent implements OnInit {
         articles.forEach((item, index) => {
           this.allNews.push(item);
         });
+      },
+      err => {
+        this.error = err.message;
+        alert(err);
       }
     );
   }

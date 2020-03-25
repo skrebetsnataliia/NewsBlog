@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
 
   showPassword = false;
   incorrectData = false;
+  error: any;
 
   ngOnInit(): void {
   }
@@ -26,12 +27,16 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     const { value } = this.myGroup;
     this.authService.logIn().subscribe(
-        (res) => {
+        res => {
           if (res.username == value.username && res.password == value.password) {
             localStorage.setItem('currentUser', 'true');
             this.router.navigate(['/profile']);
           }
           else { this.incorrectData = true; }
+        },
+        err => {
+          this.error = err.message;
+          alert(err);
         }
       );
   }
